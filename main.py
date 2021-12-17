@@ -84,7 +84,8 @@ def check_events(update: Update, context: CallbackContext) -> None:
         s += x + ': ' + context.user_data[x] + '\n'
     update.message.reply_text(s)
 
-###
+
+####################################################
 def erase_command(update: Update, context: CallbackContext) -> None:
     user_asks = context.args
     if len(user_asks) > 1:
